@@ -1,0 +1,158 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Asap&family=Roboto:ital,wght@0,500;0,900;1,500&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap&effect=3d-float');
+
+
+:root {
+    --color-primary: #f6aca2;
+    --color-secondary: #f49b90;
+    --color-tertiary: #f28b7d;
+    --color-quaternary: #f07a6a;
+    --color-quinary: #ee6352;
+  }
+
+body { 
+    background-image: url("../images/pingulove.png"); 
+     background-repeat:no-repeat; 
+     background-size:cover; 
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  text-align: center;
+  margin: 0;
+}
+header h1 {
+  position: fixed;
+  width: 90%;
+  font-size: 90px;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(to right ,#ec15b3, #fcbf07, #6532CD, #f1fd02, #dd04c0);
+  -webkit-background-clip: text;
+  background-clip: text;    
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 2s infinite alternate-reverse;      
+}
+@keyframes animated-gradient{
+  to{
+    background-position: 200%;
+  }
+}
+.pingubutton{
+    display:flex;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:auto; /*0 0.3em 0.3em 0;*/
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color: transparent;
+    text-align:center;
+    transition: all 0.15s;
+    justify-content:start;
+    font-size: 30px;
+}
+.pingubutton:hover{
+color:#DDDDDD;
+border-color:#DDDDDD;
+}
+.pingubutton:active{
+color:#BBBBBB;
+border-color:#BBBBBB;
+}
+/* @media all and (max-width:30em){
+.pingubutton{
+display:block;
+margin:0.4em auto;
+}
+} */
+
+#displayMessage {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+  }
+ 
+.messageArt{
+text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+font-family: bungee, sans-serif;
+font-weight: 400;
+text-transform: uppercase;
+font-size: calc(2rem + 2vw);
+text-align: center;
+margin: 0;
+color: var(--color-primary);
+animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+0% {
+    text-shadow: none;
+}
+10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+}
+20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary);
+}
+30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+}
+40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+    12px 12px 0 var(--color-quinary);
+}
+50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+    12px 12px 0 var(--color-quinary);
+}
+60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+    12px 12px 0 var(--color-quinary);
+}
+70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+}
+80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+    6px 6px 0 var(--color-tertiary);
+}
+90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+}
+100% {
+    text-shadow: none;
+}
+}
+
+@keyframes move {
+0% {
+    transform: translate(0px, 0px);
+}
+40% {
+    transform: translate(-12px, -12px);
+}
+50% {
+    transform: translate(-12px, -12px);
+}
+60% {
+    transform: translate(-12px, -12px);
+}
+100% {
+    transform: translate(0px, 0px);
+}
+}
